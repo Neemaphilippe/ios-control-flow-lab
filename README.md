@@ -33,7 +33,8 @@ print("D")
 - C
 - D
 
-***
+A, C, D
+
 ## Question 2
 
 What will the code block below print?  Select all that apply:
@@ -56,7 +57,8 @@ switch appInfo {
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
 
-***
+myCoolApp hasn't released yet
+
 ## Question 3
 
 What will be printed to the console when the code below is run?  Select all that apply.
@@ -80,7 +82,8 @@ default:
 - C
 - D
 
-***
+D
+
 ## Question 4
 
 What are the errors in the code below for the switch statement? Select all that apply.
@@ -103,7 +106,8 @@ case "snickers":
 - No default case in the switch statement
 - No print statement right outside the switch statement
 
-***
+No default case in the switch statement 
+
 ## Question 5
 
 Given the current weather conditions (rain, sunny, snow), use a switch statement to print an appropriate message to the user
@@ -111,10 +115,26 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 ```swift
 let currentWeather = "rain"
 
-// enter code below
+// 
+var rainWeather = rain
+var sunnyWeather = sun
+var snowWeather = snow
+
+switch currentWeather {
+case rainWeather:
+    print("It's raining")
+case sunnyWeather:
+    print("It's sunny")
+case snowWeather:
+    print("It's snowing")
+default:
+    print("Check Weather app!")
+    
+    
+}
 ```
 
-***
+ 
 ## Question 6
 
 Given the first name and last name of a Fellow, declare `fullName` variable and use string interpolation to concatenate the Fellow's full name and print to the console e.g The Fellow's full name is John Appleseed
@@ -123,7 +143,10 @@ Given the first name and last name of a Fellow, declare `fullName` variable and 
 let firstName = "John"
 let lastName = "Appleseed"
 
-// enter code below
-```
+// 
+let fullName = (firstName: "Kary" , lastName: "Martinez")
+print(fullName.firstName + " " + fullName.lastName)
+
+
 
 ***
